@@ -52,36 +52,38 @@ class Stack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(10);
+        while (true) {
+            String key = sc.nextLine();
+            switch (key) {
+                case "isFull": {
+                    System.out.println("isFull: " + stack.isFull());
+                    break;
+                }
+                case "Empty": {
+                    System.out.println("Empty: " + stack.isEmpty());
+                    break;
+                }
 
-        String key = sc.nextLine();
-        switch (key) {
-            case "isFull": {
-                System.out.println("isFull: " + stack.isFull());
-                break;
+                case "push": {
+                    System.out.println("stack push number :");
+                    int pushNumber = sc.nextInt();
+                    stack.push(pushNumber);
+                    System.out.println("Succesfully pushed " + pushNumber);
+                    break;
+                }
+                case "pop": {
+                    System.out.println("pop" + stack.pop());
+                    break;
+                }
+                case "print": {
+                    System.out.println(stack.toString());
+                    break;
+                }
+                default: {
+                    System.exit(1);
+                    break;
+                }
             }
-            case "Empty": {
-                System.out.println("Empty: " + stack.isEmpty());
-                break;
-            }
-
-            case "push": {
-                System.out.println("stack push number :");
-                int pushNumber = sc.nextInt();
-                stack.push(pushNumber);
-                System.out.println("pushed " + pushNumber);
-                break;
-            }
-            case "pop": {
-                System.out.println("pop" + stack.pop());
-                break;
-            }
-            case "print": {
-                System.out.println(stack.toString());
-                break;
-            }
-            default:
-                break;
-
         }
     }
 }
