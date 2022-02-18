@@ -29,7 +29,6 @@ class Stack {
             return array[--count];
         else
             return -1;
-        // throw new InvalidOperationException("Stack empty!");
     }
 
     public int top() {
@@ -37,8 +36,6 @@ class Stack {
             return array[count - 1];
         else
             return -1;
-        // return default(int);
-        // throw new InvalidOperationException("Stack empty!");
     }
 
     public String toString() {
@@ -52,6 +49,8 @@ class Stack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(10);
+        System.out.println("Baurjan Gal-Erdene\nString: ");
+
 
         String key = sc.nextLine();
         switch (key) {
