@@ -46,6 +46,14 @@ class Stack {
         return s;
     }
 
+    public String toTest() {
+        String s = "";
+        for (int i = 0; i < count; i++)
+            s = s + array[i] + "\n";
+
+        return s;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(10);
