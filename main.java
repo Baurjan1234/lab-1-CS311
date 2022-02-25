@@ -49,38 +49,43 @@ class Stack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(10);
-        System.out.println("Baurjan Gal-Erdene\nString: ");
+        System.out.println("Baurjan Gal-Erdene\nLab1");
+        System.out.println("\tisFull\n\tEmpty\n\tPush\n\tPop\n\tPrint\n\tExit ");
 
+        while (true) {
+            String key = sc.nextLine();
+            switch (key) {
+                case "isFull": {
+                    System.out.println("isFull: " + stack.isFull());
+                    break;
+                }
+                case "Empty": {
+                    System.out.println("Empty: " + stack.isEmpty());
+                    break;
+                }
 
-        String key = sc.nextLine();
-        switch (key) {
-            case "isFull": {
-                System.out.println("isFull: " + stack.isFull());
-                break;
-            }
-            case "Empty": {
-                System.out.println("Empty: " + stack.isEmpty());
-                break;
-            }
+                case "Push": {
+                    System.out.println("stack push number :");
+                    int pushNumber = sc.nextInt();
+                    stack.push(pushNumber);
+                    System.out.println("pushed " + pushNumber);
+                    break;
+                }
+                case "Pop": {
+                    System.out.println("pop:" + stack.pop());
+                    break;
+                }
+                case "Print": {
+                    System.out.println(stack.toString());
+                    break;
+                }
+                default: {
+                    sc.close();
+                    System.exit(1);
+                    break;
+                }
 
-            case "push": {
-                System.out.println("stack push number :");
-                int pushNumber = sc.nextInt();
-                stack.push(pushNumber);
-                System.out.println("pushed " + pushNumber);
-                break;
             }
-            case "pop": {
-                System.out.println("pop" + stack.pop());
-                break;
-            }
-            case "print": {
-                System.out.println(stack.toString());
-                break;
-            }
-            default:
-                break;
-
         }
     }
 }
