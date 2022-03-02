@@ -51,7 +51,7 @@ class Stack {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Stack stack = new Stack(10);
+        Stack stack = new Stack(sc.nextInt());
         while (true) {
             String key = sc.nextLine();
             switch (key) {
