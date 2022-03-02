@@ -3,6 +3,7 @@ public class lab1 {
 
         System.out.println("Hello World");
         System.out.println("test 1");
+        System.out.println("test 2");
 
         
 

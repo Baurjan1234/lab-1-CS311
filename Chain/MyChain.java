@@ -208,7 +208,8 @@ public class MyChain extends Chain {
                     }
                     System.out.println("inserted el :" + list.toString());
                     System.out.println("intersection :" + my.intersection(list));
-                    break;
+                    break;2
+                    
                 }
                 case 12: {
                     sc.close();

@@ -1,13 +1,13 @@
 
 package Chain;
-
 class ChainNode {
       // package visible data members
       Object element;
       ChainNode next;
 
       // package visible constructors
-      ChainNode() {}
+      ChainNode() {
+      }
 
       ChainNode(Object element) {
             this.element = element;
