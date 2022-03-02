@@ -1,8 +1,8 @@
 
 package Chain;
 
-import java.util.*;
-import java.util.Iterator;
+// import java.util.*;
+// import java.util.Iterator;
 
 public class Chain implements LinearList {
       // data members
@@ -147,45 +147,45 @@ public class Chain implements LinearList {
             return new String(s);
       }
 
-      /** create and return an iterator */
-      public Iterator iterator() {
-            return new ChainIterator();
-      }
+      // /** create and return an iterator */
+      // public Iterator iterator() {
+      //       return new ChainIterator();
+      // }
 
-      /** chain iterator */
-      private class ChainIterator implements Iterator {
-            // data member
-            private ChainNode nextNode;
+      // /** chain iterator */
+      // private class ChainIterator  {
+      //       // data member
+      //       private ChainNode nextNode;
 
-            // constructor
-            public ChainIterator() {
-                  nextNode = firstNode;
-            }
+      //       // constructor
+      //       public ChainIterator() {
+      //             nextNode = firstNode;
+      //       }
 
-            // methods
-            /** @return true iff list has a next element */
-            public boolean hasNext() {
-                  return nextNode != null;
-            }
+      //       // methods
+      //       /** @return true iff list has a next element */
+      //       public boolean hasNext() {
+      //             return nextNode != null;
+      //       }
 
-            /**
-             * @return next element in list
-             * @throws NoSuchElementException
-             *                                when there is no next element
-             */
-            public Object next() {
-                  if (nextNode != null) {
-                        Object elementToReturn = nextNode.element;
-                        nextNode = nextNode.next;
-                        return elementToReturn;
-                  } else
-                        throw new NoSuchElementException("No next element");
-            }
+      //       /**
+      //        * @return next element in list
+      //        * @throws NoSuchElementException
+      //        *                                when there is no next element
+      //        */
+      //       public Object next() {
+      //             if (nextNode != null) {
+      //                   Object elementToReturn = nextNode.element;
+      //                   nextNode = nextNode.next;
+      //                   return elementToReturn;
+      //             } else
+      //                   throw new NoSuchElementException("No next element");
+      //       }
 
-            /** unsupported method */
-            public void remove() {
-                  throw new UnsupportedOperationException("remove not supported");
-            }
-      }
+      //       /** unsupported method */
+      //       public void remove() {
+      //             throw new UnsupportedOperationException("remove not supported");
+      //       }
+      // }
 
 }
