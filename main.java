@@ -29,7 +29,6 @@ class Stack {
             return array[--count];
         else
             return -1;
-        // throw new InvalidOperationException("Stack empty!");
     }
 
     public int top() {
@@ -37,8 +36,6 @@ class Stack {
             return array[count - 1];
         else
             return -1;
-        // return default(int);
-        // throw new InvalidOperationException("Stack empty!");
     }
 
     public String toString() {
@@ -49,9 +46,18 @@ class Stack {
         return s;
     }
 
+    public String toTest() {
+        String s = "";
+        for (int i = 0; i < count; i++)
+            s = s + array[i] + "\n";
+
+        return s;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack stack = new Stack(sc.nextInt());
+        System.out.println("test 1");
         while (true) {
             String key = sc.nextLine();
             switch (key) {
@@ -76,12 +82,8 @@ class Stack {
                     break;
                 }
                 case "print": {
-                    System.out.println(stack.toString());
-                    break;
-                }
-                default: {
-                    System.exit(1);
-                    break;
+
+                    System.out.println("dskfjidngo' ifjod");
                 }
             }
         }
