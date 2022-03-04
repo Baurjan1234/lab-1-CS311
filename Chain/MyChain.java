@@ -57,7 +57,8 @@ public class MyChain extends Chain {
         Scanner sc = new Scanner(System.in);
         MyChain my = new MyChain();
         MyChain list;
-        System.out.println("ta heden element oruulah ve?");
+        System.out.println("ta heden element oruulah ve? Монгол хаха saidn хөбө ");
+        System.out.println("ta heden element oruulah ve? Монгол хаха saidn хөбө ");
         int count = sc.nextInt();
         if (count > 0) {
             System.out.println("element: ");
