@@ -53,7 +53,8 @@ public class MyChain extends Chain {
         return intersection;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         MyChain my = new MyChain();
         MyChain list;
