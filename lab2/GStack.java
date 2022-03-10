@@ -113,7 +113,9 @@ public class GStack<T> {
                     System.out.println(stack.print());
                     break;
                 }
+
                 case 8: {
+                    sc.close();
                     System.exit(0);
                     break;
 
