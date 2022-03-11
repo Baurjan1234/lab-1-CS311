@@ -60,7 +60,7 @@ public class GStack<T> {
         System.out.print("Array length: ");
         int length = sc.nextInt();
         GStack<Object> stack = new GStack<Object>(Object[].class, length);
-        System.out.println("Stack Functions \n");
+        System.out.println("<------ Stack Functions ----->");
         System.out.println(
                 "\t1. Peek \n\t2. isEmpty \n\t3. isFull \n\t4. Push \n\t5. Pop \n\t6. Clear \n\t7. Print \n\t8. Exit  ");
 
@@ -71,17 +71,15 @@ public class GStack<T> {
             switch (key) {
                 case 1: {
                     System.out.println();
-                    // key == 5 ? System.out.println("");
                     if (stack.peek() != null)
                         System.out.println("Peek: " + stack.peek());
                     else
                         System.out.println("null");
-
                     break;
                 }
                 case 2: {
                     // isEmpty
-                    System.out.println("empty: " + stack.isEmpty());
+                    System.out.println("Empty: " + stack.isEmpty());
                     break;
                 }
                 case 3: {
@@ -98,15 +96,12 @@ public class GStack<T> {
                     break;
                 }
                 case 5: {
-                    // Pop?
-
                     System.out.println("Pop: " + stack.pop());
                     break;
                 }
                 case 6: {
-                    // ?clear
                     stack.clear();
-                    System.out.println("cleaned :)");
+                    System.out.println("Cleaned :)");
                     break;
                 }
                 case 7: {
@@ -118,7 +113,6 @@ public class GStack<T> {
                     sc.close();
                     System.exit(0);
                     break;
-
                 }
                 default:
                     System.out.println("Wrong value!!!");
